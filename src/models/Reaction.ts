@@ -1,4 +1,4 @@
-import { Schema, model, Document, Types } from 'mongoose';
+import { Schema, Document, Types } from 'mongoose';
 
 const formatDate = (date: Date): any => {
     return date.toLocaleString(); // Formats like: 4/10/2025, 3:12:48 PM
@@ -32,7 +32,6 @@ const reactionSchema = new Schema<IReaction>(
             default: Date.now,
             get: formatDate
         }
-
     }, 
     {
         toJSON: {
