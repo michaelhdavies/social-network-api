@@ -1,5 +1,5 @@
 import { Schema, model, Document } from 'mongoose';
-import reactionSchema from './Reaction';
+import reactionSchema from './Reaction.js';
 
 const formatDate = (date: Date): any => {
     return date.toLocaleString(); // Formats like: 4/10/2025, 3:12:48 PM
